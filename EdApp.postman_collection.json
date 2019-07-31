@@ -1,0 +1,123 @@
+{
+	"info": {
+		"_postman_id": "869cd21e-93ad-4b00-a373-53024b4919f9",
+		"name": "EdApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetItems",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44399/items/get",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44399",
+					"path": [
+						"items",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetWinner",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44399/items/GetWinner/9",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44399",
+					"path": [
+						"items",
+						"GetWinner",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetBiddings",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44322/Bid/GetBiddings/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44322",
+					"path": [
+						"Bid",
+						"GetBiddings",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostBiding",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "ItemId",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "Email",
+							"value": "89@1c.com",
+							"type": "text"
+						},
+						{
+							"key": "Price",
+							"value": "999999999",
+							"type": "text"
+						},
+						{
+							"key": "Comment",
+							"value": "Postman Bidding",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost:44322/Bid/Bid",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44322",
+					"path": [
+						"Bid",
+						"Bid"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

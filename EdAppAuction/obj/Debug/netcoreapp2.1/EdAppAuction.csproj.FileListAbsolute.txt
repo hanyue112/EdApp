@@ -1,0 +1,14 @@
+C:\Users\hanyu\source\repos\EdAppAuction\EdAppAuction\bin\Debug\netcoreapp2.1\EdAppAuction.deps.json
+C:\Users\hanyu\source\repos\EdAppAuction\EdAppAuction\bin\Debug\netcoreapp2.1\EdAppAuction.runtimeconfig.json
+C:\Users\hanyu\source\repos\EdAppAuction\EdAppAuction\bin\Debug\netcoreapp2.1\EdAppAuction.runtimeconfig.dev.json
+C:\Users\hanyu\source\repos\EdAppAuction\EdAppAuction\bin\Debug\netcoreapp2.1\EdAppAuction.dll
+C:\Users\hanyu\source\repos\EdAppAuction\EdAppAuction\bin\Debug\netcoreapp2.1\EdAppAuction.pdb
+C:\Users\hanyu\source\repos\EdAppAuction\EdAppAuction\obj\Debug\netcoreapp2.1\EdAppAuction.csprojAssemblyReference.cache
+C:\Users\hanyu\source\repos\EdAppAuction\EdAppAuction\obj\Debug\netcoreapp2.1\EdAppAuction.csproj.CoreCompileInputs.cache
+C:\Users\hanyu\source\repos\EdAppAuction\EdAppAuction\obj\Debug\netcoreapp2.1\EdAppAuction.RazorAssemblyInfo.cache
+C:\Users\hanyu\source\repos\EdAppAuction\EdAppAuction\obj\Debug\netcoreapp2.1\EdAppAuction.RazorAssemblyInfo.cs
+C:\Users\hanyu\source\repos\EdAppAuction\EdAppAuction\obj\Debug\netcoreapp2.1\EdAppAuction.AssemblyInfoInputs.cache
+C:\Users\hanyu\source\repos\EdAppAuction\EdAppAuction\obj\Debug\netcoreapp2.1\EdAppAuction.AssemblyInfo.cs
+C:\Users\hanyu\source\repos\EdAppAuction\EdAppAuction\obj\Debug\netcoreapp2.1\EdAppAuction.RazorTargetAssemblyInfo.cache
+C:\Users\hanyu\source\repos\EdAppAuction\EdAppAuction\obj\Debug\netcoreapp2.1\EdAppAuction.dll
+C:\Users\hanyu\source\repos\EdAppAuction\EdAppAuction\obj\Debug\netcoreapp2.1\EdAppAuction.pdb

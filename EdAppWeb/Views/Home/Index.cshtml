@@ -1,0 +1,75 @@
+﻿@model List<Item>
+
+<div class="row">
+    <div class="col-md-12">
+        <h2>Auction List</h2>
+        <table class="table table-dark">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Current/Last Winner</th>
+                    <th scope="col">End DateTime</th>
+                    <th scope="col">@Html.TextBox("Account Name", "test1@test.com.au", new { @class = "form-control d-inline-block AccountInput" }) </th>
+                </tr>
+            </thead>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ItemId)<br />
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Title)<br />
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Winner)<br />
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.EndBid)<br />
+                    </td>
+                    <td>
+                        @if (DateTime.Compare(item.EndBid, DateTime.Now) < 0)
+                        {
+                            <p>SOLD</p>
+                        }
+                        else
+                        {
+                            <button type="button" class="btn btn-info" Item="@item.ItemId" adding="@(decimal.Parse(item.Winner.Split('$')[1])+1)">Bid! +1</button>
+                            <button type="button" class="btn btn-primary" Item="@item.ItemId" adding="@(decimal.Parse(item.Winner.Split('$')[1])+5)">Bid! +5</button>
+                            <button type="button" class="btn btn-success" Item="@item.ItemId" adding="@(decimal.Parse(item.Winner.Split('$')[1])+10)">Bid! +10</button>
+                            <button type="button" class="btn btn-danger" Item="@item.ItemId" adding="@(decimal.Parse(item.Winner.Split('$')[1])*2)">Bid! x2</button>
+                        }
+                    </td>
+                </tr>
+            }
+        </table>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        $(".btn").click(function () {
+            $.ajax({
+                type: "POST",
+                xhrFields: {
+                    withCredentials: true
+                },
+                url: "https://localhost:44322/Bid/Bid",
+                data: {
+                    ItemId: this.getAttribute("Item"),
+                    Email: $(".AccountInput").val(),
+                    Price: this.getAttribute("adding"),
+                    Comment: "JQuery Ajax"
+                },
+                dataType: "json",
+                success: function (response) {
+                    // handle the response
+                    location.reload();
+                },
+                error: function (xhr, status) {
+                    // handle errors
+                }
+            });
+        });
+    });
+</script>
